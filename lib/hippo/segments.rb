@@ -10,6 +10,7 @@ module Hippo
     autoload_relative :AK5,   'segments/AK5'
     autoload_relative :AK9,   'segments/AK9'
     autoload_relative :AMT,   'segments/AMT'
+    autoload_relative :BGN,   'segments/BGN'
     autoload_relative :BHT,   'segments/BHT'
     autoload_relative :BPR,   'segments/BPR'
     autoload_relative :CAS,   'segments/CAS'
