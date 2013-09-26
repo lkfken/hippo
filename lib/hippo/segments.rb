@@ -49,6 +49,7 @@ module Hippo
     autoload_relative :HLH,   'segments/HLH'
     autoload_relative :HSD,   'segments/HSD'
     autoload_relative :ICM,   'segments/ICM'
+    autoload_relative :IDC,   'segments/IDC'
     autoload_relative :III,   'segments/III'
     autoload_relative :IK3,   'segments/IK3'
     autoload_relative :IK4,   'segments/IK4'
