@@ -3,6 +3,7 @@ require_relative 'segments/base'
 module Hippo
   module Segments
     autoload_relative :AAA,   'segments/AAA'
+    autoload_relative :ACT,   'segments/ACT'
     autoload_relative :AK1,   'segments/AK1'
     autoload_relative :AK2,   'segments/AK2'
     autoload_relative :AK3,   'segments/AK3'
@@ -40,7 +41,7 @@ module Hippo
     autoload_relative :EM,    'segments/EM'
     autoload_relative :EQ,    'segments/EQ'
     autoload_relative :FRM,   'segments/FRM'
-    autoload_relative :HD,   'segments/HD'
+    autoload_relative :HD,    'segments/HD'
     autoload_relative :HCP,   'segments/HCP'
     autoload_relative :HI,    'segments/HI'
     autoload_relative :HL,    'segments/HL'
