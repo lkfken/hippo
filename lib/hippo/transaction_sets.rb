@@ -8,6 +8,7 @@ module Hippo
     autoload_relative :HIPAA_271, 'transaction_sets/HIPAA_271'
     autoload_relative :HIPAA_276, 'transaction_sets/HIPAA_276'
     autoload_relative :HIPAA_277, 'transaction_sets/HIPAA_277'
+    autoload_relative :HIPAA_834, 'transaction_sets/HIPAA_834'
     autoload_relative :HIPAA_835, 'transaction_sets/HIPAA_835'
     autoload_relative :HIPAA_837, 'transaction_sets/HIPAA_837'
     autoload_relative :HIPAA_997, 'transaction_sets/HIPAA_997'
