@@ -38,6 +38,7 @@ module Hippo
     autoload_relative :DTM,   'segments/DTM'
     autoload_relative :DTP,   'segments/DTP'
     autoload_relative :EB,    'segments/EB'
+    autoload_relative :EC,    'segments/EC'
     autoload_relative :EM,    'segments/EM'
     autoload_relative :EQ,    'segments/EQ'
     autoload_relative :FRM,   'segments/FRM'
