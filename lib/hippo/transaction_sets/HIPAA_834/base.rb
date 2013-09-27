@@ -41,7 +41,7 @@ module Hippo::TransactionSets
               }
 
       segment Hippo::Segments::QTY,
-              :name     => 'Transaction Set Control Totals',
+              :name     => 'Dependent Total',
               :minimum  => 0,
               :maximum  => 3,
               :position => 600,

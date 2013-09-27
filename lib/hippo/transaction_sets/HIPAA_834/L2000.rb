@@ -2,7 +2,7 @@ module Hippo::TransactionSets
   module HIPAA_834
 
     class L2000 < Hippo::TransactionSets::Base
-      loop_name 'L2000' #Header Number
+      loop_name 'L2000' # member level detail
 
       segment Hippo::Segments::INS,
               :name          => 'Member Level Detail',
