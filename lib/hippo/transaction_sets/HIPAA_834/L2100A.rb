@@ -8,18 +8,29 @@ module Hippo::TransactionSets
               :name          => 'Member Name',
               :minimum       => 1,
               :maximum       => 1,
-              :position      => 100,
+              :position      => 300,
               :identified_by => {
                   'NM101' => %w[74 IL]
               }
       segment Hippo::Segments::PER,
-              :name => 'Member Communications Numbers'
-
+              :name          => 'Member Communications Numbers',
+              :minimum       => 1,
+              :maximum       => 1,
+              :position      => 400,
+              :identified_by => {
+                  'PER01' => 'IP'
+              }
       segment Hippo::Segments::N3,
-              :name => 'Member Residence Street Address'
+              :name     => 'Member Residence Street Address',
+              :minimum  => 1,
+              :maximum  => 1,
+              :position => 500
 
       segment Hippo::Segments::N4,
-              :name => 'Member City, State, ZIP Code'
+              :name     => 'Member City, State, ZIP Code',
+              :minimum  => 1,
+              :maximum  => 1,
+              :position => 600
 
       segment Hippo::Segments::DMG,
               :name => 'Member Demographics'
