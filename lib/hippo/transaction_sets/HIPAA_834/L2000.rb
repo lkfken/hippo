@@ -5,10 +5,10 @@ module Hippo::TransactionSets
       loop_name 'L2000' # member level detail
 
       segment Hippo::Segments::INS,
-              :name          => 'Member Level Detail',
-              :minimum       => 1,
-              :maximum       => 1,
-              :position      => 100
+              :name     => 'Member Level Detail',
+              :minimum  => 1,
+              :maximum  => 1,
+              :position => 100
 
       segment Hippo::Segments::REF,
               :name          => 'Subscriber Identifier',
@@ -44,16 +44,22 @@ module Hippo::TransactionSets
               }
 
       loop Hippo::TransactionSets::HIPAA_834::L2100A,
-           :name     => 'Member Name',
-           :minimum  => 1,
-           :maximum  => 1,
-           :position => 300
+           :name          => 'Member Name',
+           :minimum       => 1,
+           :maximum       => 1,
+           :position      => 300,
+           :identified_by => {
+               'NM1.NM101' => %w[74 IL]
+           }
 
       loop Hippo::TransactionSets::HIPAA_834::L2100B,
-           :name     => 'Incorrect Member Name',
-           :minimum  => 0,
-           :maximum  => 1,
-           :position => 300
+           :name          => 'Incorrect Member Name',
+           :minimum       => 0,
+           :maximum       => 1,
+           :position      => 300,
+           :identified_by => {
+               'NM1.NM101' => %w[70]
+           }
 
       loop Hippo::TransactionSets::HIPAA_834::L2100C,
            :name     => 'Member Mailing Address',
@@ -80,10 +86,13 @@ module Hippo::TransactionSets
            :position => 300
 
       loop Hippo::TransactionSets::HIPAA_834::L2100G,
-           :name     => 'Responsible Person',
-           :minimum  => 0,
-           :maximum  => 13,
-           :position => 300
+           :name          => 'Responsible Person',
+           :minimum       => 0,
+           :maximum       => 13,
+           :position      => 300,
+           :identified_by => {
+               'NM1.NM101' => %w[6Y 9K E1 EI EXS GB GD J6 LR QD S1 TZ X4]
+           }
 
       loop Hippo::TransactionSets::HIPAA_834::L2100H,
            :name     => 'Drop Off Location',

@@ -179,7 +179,7 @@ class TestSegmentsBase < MiniTest::Unit::TestCase
   def test_access_empty_composite_returns_nil
     seg = Hippo::Segments::TCS.new
 
-    assert_equal nil, seg.TCS01_01
+    assert_nil seg.TCS01_01
   end
 
   def test_segment_parse_for_composite_fields
