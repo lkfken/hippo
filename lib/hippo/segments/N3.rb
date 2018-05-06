@@ -18,6 +18,7 @@ module Hippo::Segments
           :maximum              => 55,
           :required             => false,
           :data_element_number  => 166
+
     field :name                 => 'AddressLine3',
           :sequence             => 3,
           :datatype             => :string,
